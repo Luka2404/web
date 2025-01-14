@@ -1,0 +1,237 @@
+.off_canvars_overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+	cursor: crosshair;
+	background: #232323;
+	top: 0;
+}
+
+.off_canvars_overlay.active {
+	opacity: 0.5;
+	visibility: visible;
+}
+
+.offcanvas_menu_wrapper {
+	z-index: 999999;
+}
+
+.offcanvas_menu {
+	display: none;
+}
+
+.canvas_open a {
+	width: 41px;
+	height: 37px;
+	display: block;
+	line-height: 37px;
+	text-align: center;
+	color: var(--white);
+	font-size: 22px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.canvas_open {
+	margin-left: 20px;
+}
+
+.canvas_open.blck-canvas a i {
+	color: #111111;
+}
+
+.mobile-logo a {
+	width: 180px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	font-weight: 900;
+	display: inline-flex;
+}
+
+.mobile-logo h2 a {
+	font-weight: 700;
+}
+
+.offcanvas_menu_wrapper {
+	width: 290px;
+	position: fixed;
+	background: var(--white);
+	top: 0;
+	height: 100vh;
+	transition: 0.5s;
+	left: 0;
+	margin-left: -300px;
+	padding: 20px 0px 30px;
+	overflow-y: auto;
+}
+
+.offcanvas_menu_wrapper.active {
+	margin-left: 0;
+}
+
+.offcanvas_menu_wrapper .slinky-theme-default {
+	background: inherit;
+	min-height: 300px;
+	overflow-y: auto;
+}
+
+.offcanvas_menu_wrapper .header_search_box {
+	display: block;
+}
+
+.offcanvas_main_menu>li.menu-item-has-children.menu-open>span.menu-expand {
+	transform: rotate(180deg);
+}
+
+.offcanvas_main_menu>li ul li.menu-item-has-children.menu-open span.menu-expand {
+	transform: rotate(180deg);
+}
+
+.offcanvas_main_menu li {
+	position: relative;
+}
+
+.offcanvas_main_menu li:last-child {
+	margin: 0;
+}
+
+.offcanvas_main_menu li span.menu-expand {
+	display: none;
+}
+
+.offcanvas_main_menu li a {
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: capitalize;
+	display: block;
+	padding: 0px 10px 10px 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid#ebebeb;
+	transition: all 0.3s ease;
+	color: var(--black);
+}
+
+.offcanvas_main_menu li a:hover {
+	color: var(--primary);
+}
+
+.offcanvas_main_menu li ul.sub-menu {
+	padding-left: 20px;
+}
+
+.offcanvas_main_menu li ul.sub-menu li a {
+	font-size: 14px;
+}
+
+.offcanvas_footer {
+	margin-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.offcanvas_footer span a {
+	font-size: 14px;
+}
+
+.offcanvas_footer span a:hover {
+	color: var(--primary);
+}
+
+.slinky-theme-default a:not(.back) {
+	padding: 10px 0;
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.slinky-theme-default a:not(.back):hover {
+	background: inherit;
+	color: var(--primary);
+}
+
+.canvas_close {
+	position: absolute;
+	top: 27px;
+	right: 13px;
+	font-size: 20px;
+}
+
+.canvas_close a {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	width: 32px;
+	height: 32px;
+	display: block;
+	text-align: center;
+	line-height: 32px;
+	border: 1px solid #ededed;
+	border-radius: 50%;
+	color: var(--black);
+	transition: all 0.3s;
+}
+
+.canvas_close a:hover {
+	transform: rotate(90deg);
+	color: var(--primary);
+}
+
+.mobile-logo {
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.canvas_open {
+	color: var(--white);
+}
+
+@media only screen and (max-width: 991px) {
+	.phone-number {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+	.call-now {
+		display: block;
+	}
+
+	.phone-number span {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 30px;
+		color: var(--heading);
+	}
+
+	.phone-number p,
+	.phone-number span a {
+		font-size: 16px;
+		font-weight: 400;
+		color: var(--pregraph);
+	}
+
+	.phone-number p {
+		margin-top: 3px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.canvas_open {
+		display: inline-block;
+		color: var(--white);
+	}
+
+	.offcanvas_menu {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.offcanvas_menu {
+		display: block;
+	}
+}
